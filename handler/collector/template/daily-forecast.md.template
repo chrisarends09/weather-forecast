@@ -21,7 +21,7 @@
     <tr>
         <th>Temperature</th>
         {{ range $i, $weather := . -}}
-            <td>{{ $weather.MinTempC }} -  {{ $weather.MaxTempC}} °C</td>
+            <td>{{ $weather.MinTempF }} -  {{ $weather.MaxTempF}} °C</td>
         {{- end }}
     </tr>
     <tr>

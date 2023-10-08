@@ -37,7 +37,17 @@
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=chrisarends09&" alt="chrisarends09" /></p>
 -->
 
-Daily Weather Table:
-{{ template "daily-table" .Weathers }}
-Updated at:
+## Weather For Next {{ len .Weathers }} days
+
+{{template "daily-table" .Weathers}}
+
+*Updated at: {{formatTime .UpdatedAt}}*
+
+## Updated at:
+<details>
+<summary>View</summary>
+
+#### Update Time
+```shell
 {{ formatTime .UpdatedAt }}
+```
