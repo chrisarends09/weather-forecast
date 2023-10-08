@@ -1,4 +1,4 @@
-module github.com/huantt/weather-forecast
+module github.com/chrisarends09/weather-forecast
 
 go 1.21
 

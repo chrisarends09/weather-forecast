@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Generate README
-        uses: huantt/weather-forecast@v1.0.5
+        uses: chrisarends09/weather-forecast@v1.0.5
         with:
-          city: HaNoi
+          city: Portland
           days: 7
           weather-api-key: ${{ secrets.WEATHER_API_KEY }}
           template-file: 'README.md.template'

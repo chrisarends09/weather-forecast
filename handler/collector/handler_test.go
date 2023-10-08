@@ -3,7 +3,7 @@ package collector
 import (
 	_ "embed"
 	"encoding/json"
-	"github.com/huantt/weather-forecast/model"
+	"github.com/chrisarends09/weather-forecast/model"
 	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"

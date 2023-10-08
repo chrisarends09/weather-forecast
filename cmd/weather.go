@@ -2,9 +2,9 @@ package cmd
 
 import (
 	"context"
-	"github.com/huantt/weather-forecast/handler/collector"
-	"github.com/huantt/weather-forecast/impl/weather_service/weatherapi"
-	"github.com/huantt/weather-forecast/pkg/weatherapi_com"
+	"github.com/chrisarends09/weather-forecast/handler/collector"
+	"github.com/chrisarends09/weather-forecast/impl/weather_service/weatherapi"
+	"github.com/chrisarends09/weather-forecast/pkg/weatherapi_com"
 	"github.com/spf13/cobra"
 	"log/slog"
 	"os"
