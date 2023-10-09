@@ -40,7 +40,7 @@
 ## Today's Weather Forecast
 {{ with $todayWeather := index .Weathers 0 }}
 
-`{{ $todayWeather.City }}, {{$todayWeather.Country }} - {{ formatDate $todayWeather.StartTime $todayWeather.Timezone }}`
+`{{ $todayWeather.City }}, {{$todayWeather.State }}, {{$todayWeather.Country }} - {{ formatDate $todayWeather.StartTime $todayWeather.Timezone }}`
 
 <img src="{{ $todayWeather.Icon}}"/>
 
