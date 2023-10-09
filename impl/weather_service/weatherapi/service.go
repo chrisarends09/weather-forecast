@@ -57,7 +57,7 @@ func forecastDayToWeather(forecastDay weatherapi_com.ForecastDay, country, city,
 		EndTime:               &endTime,
 		Country:               country,
 		City:                  city,
-		Region:                 region,
+		Region:                region,
 		Timezone:              timezone,
 		TimezoneOffsetSeconds: timezoneOffset,
 
@@ -81,7 +81,7 @@ func forecastHourToWeather(hour weatherapi_com.ForecastHour, country, city, regi
 		EndTime:               &endTime,
 		Country:               country,
 		City:                  city,
-		Region:                 region,
+		Region:                region,
 		Timezone:              timezone,
 		TimezoneOffsetSeconds: timezoneOffset,
 
