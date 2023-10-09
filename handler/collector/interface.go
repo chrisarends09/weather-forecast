@@ -6,5 +6,5 @@ import (
 )
 
 type WeatherService interface {
-	Forecast(ctx context.Context, city string, days int) ([]model.Weather, error)
+	Forecast(ctx context.Context, city string, state string, days int) ([]model.Weather, error)
 }

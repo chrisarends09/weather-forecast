@@ -49,10 +49,11 @@ func NewService(key string, opts ...Option) *Service {
 	return service
 }
 
-func (s *Service) Forecast(ctx context.Context, city string, days int) (*Forecast, error) {
+func (s *Service) Forecast(ctx context.Context, city string, state string, days int) (*Forecast, error) {
 	var forecast *Forecast
 	resp, err := s.httpClient.R().SetContext(ctx).
 		SetQueryParam("q", city).
+		SetQueryParam("q", state).
 		SetQueryParam("days", fmt.Sprintf("%d", days)).
 		SetQueryParam("key", s.key).
 		SetResult(&forecast).

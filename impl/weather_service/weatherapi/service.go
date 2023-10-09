@@ -17,8 +17,8 @@ func NewWeatherService(service *weatherapi_com.Service) *WeatherService {
 	return &WeatherService{service}
 }
 
-func (s *WeatherService) Forecast(ctx context.Context, city string, days int) ([]model.Weather, error) {
-	forecast, err := s.service.Forecast(ctx, city, days)
+func (s *WeatherService) Forecast(ctx context.Context, city string, state string, days int) ([]model.Weather, error) {
+	forecast, err := s.service.Forecast(ctx, city, state, days)
 	if err != nil {
 		return nil, err
 	}
@@ -47,7 +47,7 @@ func toWeathers(forecast weatherapi_com.Forecast) ([]model.Weather, error) {
 	return weathers, nil
 }
 
-func forecastDayToWeather(forecastDay weatherapi_com.ForecastDay, country, city, timezone string, timezoneOffset int64) model.Weather {
+func forecastDayToWeather(forecastDay weatherapi_com.ForecastDay, country, city, state, timezone string, timezoneOffset int64) model.Weather {
 	startTime := time.Unix(forecastDay.DateEpoch, 0)
 	endTime := startTime.Add(time.Hour)
 	return model.Weather{
@@ -57,6 +57,7 @@ func forecastDayToWeather(forecastDay weatherapi_com.ForecastDay, country, city,
 		EndTime:               &endTime,
 		Country:               country,
 		City:                  city,
+		State:                 state,
 		Timezone:              timezone,
 		TimezoneOffsetSeconds: timezoneOffset,
 
@@ -70,7 +71,7 @@ func forecastDayToWeather(forecastDay weatherapi_com.ForecastDay, country, city,
 	}
 }
 
-func forecastHourToWeather(hour weatherapi_com.ForecastHour, country, city, timezone string, timezoneOffset int64) model.Weather {
+func forecastHourToWeather(hour weatherapi_com.ForecastHour, country, city, state, timezone string, timezoneOffset int64) model.Weather {
 	startTime := time.Unix(hour.TimeEpoch, 0)
 	endTime := startTime.Add(time.Hour)
 	return model.Weather{
@@ -80,6 +81,7 @@ func forecastHourToWeather(hour weatherapi_com.ForecastHour, country, city, time
 		EndTime:               &endTime,
 		Country:               country,
 		City:                  city,
+		State:                 state,
 		Timezone:              timezone,
 		TimezoneOffsetSeconds: timezoneOffset,
 

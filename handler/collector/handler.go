@@ -22,9 +22,9 @@ func NewCollector(weatherService WeatherService) *Collector {
 	return &Collector{weatherService}
 }
 
-func (c *Collector) Collect(ctx context.Context, city string, days int, templateFilePath string, outFilePath string) error {
-	slog.Info(fmt.Sprintf("Collecting weather for %s for %d days - Template file: %s", city, days, templateFilePath))
-	weathers, err := c.weatherService.Forecast(ctx, city, days)
+func (c *Collector) Collect(ctx context.Context, city string, state string, days int, templateFilePath string, outFilePath string) error {
+	slog.Info(fmt.Sprintf("Collecting weather for %s for %d days - Template file: %s", city, state, days, templateFilePath))
+	weathers, err := c.weatherService.Forecast(ctx, city, state, days)
 	if err != nil {
 		return errs.Joinf(err, "[weatherService.Forecast]")
 	}
