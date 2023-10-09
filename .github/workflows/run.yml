@@ -14,7 +14,6 @@ jobs:
         uses: chrisarends09/weather-forecast@v1.0.5
         with:
           city: Portland
-          region: Oregon
           days: 3
           weather-api-key: ${{ secrets.WEATHER_API_KEY }}
           template-file: 'README.md.template'

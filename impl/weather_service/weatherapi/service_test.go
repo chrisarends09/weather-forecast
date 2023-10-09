@@ -25,7 +25,6 @@ func TestToWeathers(t *testing.T) {
 	for _, weather := range weathers {
 		assert.NotEmpty(t, weather.Country)
 		assert.NotEmpty(t, weather.City)
-		assert.NotEmpty(t, weather.Region)
 		assert.NotEmpty(t, weather.Condition)
 		assert.NotEmpty(t, weather.Timezone)
 		assert.NotEmpty(t, weather.Icon)

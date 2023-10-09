@@ -7,7 +7,6 @@ type Weather struct {
 	EndTime               *time.Time `json:"end_time"`
 	Country               string     `json:"country"`
 	City                  string     `json:"city"`
-	Region                string     `json:"region"`
 	Timezone              string     `json:"timezone"`
 	TimezoneOffsetSeconds int64      `json:"timezone_offset_seconds"`
 	Condition             string     `json:"condition"`
