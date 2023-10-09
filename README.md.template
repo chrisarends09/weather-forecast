@@ -37,8 +37,7 @@
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=chrisarends09&" alt="chrisarends09" /></p>
 -->
 
-## Today's Weather
-<div align="center">
+## Today's Weather Forecast
 {{ with $todayWeather := index .Weathers 0 }}
 
 `{{ $todayWeather.City }}, {{$todayWeather.Country }} - {{ formatDate $todayWeather.StartTime $todayWeather.Timezone }}`
@@ -46,8 +45,6 @@
 <img src="{{ $todayWeather.Icon}}"/>
 
 {{ $todayWeather.Condition }}
-
-</div>
 
 {{template "hourly-table" $todayWeather.HourlyWeathers}}
 
@@ -57,13 +54,11 @@
 
 {{template "daily-table" .Weathers}}
 
-*Updated at: {{formatTime .UpdatedAt}}*
-
 ## Updated at:
 <details>
 <summary>View</summary>
 
 #### Update Time
 ```shell
-{{ formatTime .UpdatedAt }}
+*Updated at: {{formatTime .UpdatedAt}} - by **[chrisarends09/weather-forecast](https://github.com/chrisarends09/weather-forecast)***
 ```
