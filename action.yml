@@ -4,8 +4,8 @@ inputs:
   city:
     description: 'City'
     required: true
-  state:
-    description: 'State'
+  region:
+    description: 'Region'
     required: true
   days:
     description: 'Days of forecast'
@@ -28,6 +28,6 @@ runs:
     - --weather-api-key=${{ inputs.weather-api-key }}
     - --days=${{ inputs.days }}
     - --city=${{ inputs.city }}
-    - --state=${{ inputs.state }}
+    - --region=${{ inputs.region }}
     - --template-file=${{ inputs.template-file }}
     - --out-file=${{ inputs.out-file }}

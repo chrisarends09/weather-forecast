@@ -34,7 +34,7 @@
 ## Today's Weather Forecast
 
 
-`Portland, United States of America - 07/10/2023`
+`Portland, United Regions of America - 07/10/2023`
 
 <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png"/>
 
