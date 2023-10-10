@@ -56,11 +56,11 @@ Moderate rain
     </tr>
     <tr>
         <th>Temperature</th>
-        <td>13.6 °C</td><td>14.4 °C</td><td>13.5 °C</td><td>13.5 °C</td><td>13.3 °C</td><td>13.2 °C</td><td>12.9 °C</td><td>11.8 °C</td><td>11.8 °C</td><td>12 °C</td><td>12.5 °C</td><td>13.1 °C</td><td>14.6 °C</td><td>15.7 °C</td><td>14.2 °C</td><td>13.6 °C</td><td>13.9 °C</td><td>14.2 °C</td><td>13.4 °C</td><td>13.5 °C</td><td>12.9 °C</td><td>12.9 °C</td><td>12.4 °C</td><td>12.8 °C</td>
+        <td>13.6 °C</td><td>13.6 °C</td><td>14.4 °C</td><td>13.5 °C</td><td>13.3 °C</td><td>13.2 °C</td><td>12.9 °C</td><td>11.8 °C</td><td>11.8 °C</td><td>12 °C</td><td>12.5 °C</td><td>13.1 °C</td><td>14.6 °C</td><td>15.7 °C</td><td>14.2 °C</td><td>13.6 °C</td><td>13.9 °C</td><td>14.2 °C</td><td>13.4 °C</td><td>13.5 °C</td><td>12.9 °C</td><td>12.9 °C</td><td>12.4 °C</td><td>12.8 °C</td>
     </tr>
     <tr>
         <th>Wind</th>
-        <td>7.2 kph</td><td>6.8 kph</td><td>6.8 kph</td><td>6.8 kph</td><td>7.2 kph</td><td>9 kph</td><td>9.4 kph</td><td>11.2 kph</td><td>10.4 kph</td><td>9 kph</td><td>6.1 kph</td><td>7.9 kph</td><td>12.2 kph</td><td>11.9 kph</td><td>14 kph</td><td>16.2 kph</td><td>16.2 kph</td><td>17.3 kph</td><td>16.2 kph</td><td>20.2 kph</td><td>16.2 kph</td><td>14.8 kph</td><td>15.8 kph</td><td>17.6 kph</td>
+        <td>7.2 kph</td><td>6.5 kph</td><td>9 kph</td><td>6.8 kph</td><td>7.2 kph</td><td>9 kph</td><td>9.4 kph</td><td>11.2 kph</td><td>10.4 kph</td><td>9 kph</td><td>6.1 kph</td><td>7.9 kph</td><td>12.2 kph</td><td>11.9 kph</td><td>14 kph</td><td>16.2 kph</td><td>16.2 kph</td><td>17.3 kph</td><td>16.2 kph</td><td>20.2 kph</td><td>16.2 kph</td><td>14.8 kph</td><td>15.8 kph</td><td>17.6 kph</td>
     </tr>
 </table>
 
@@ -98,5 +98,5 @@ Moderate rain
 
 #### Update Time
 ```shell
-*Updated at: 2023-10-10T08:27:46Z - by **[chrisarends09/weather-forecast](https://github.com/chrisarends09/weather-forecast)***
+*Updated at: 2023-10-10T09:23:18Z - by **[chrisarends09/weather-forecast](https://github.com/chrisarends09/weather-forecast)***
 ```
