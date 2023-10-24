@@ -35,7 +35,7 @@ func UpdateWeather(use string) *cobra.Command {
 	command.Flags().StringVarP(&weatherTemplateFilePath, "template-file", "f", "", "Readme template file path")
 	command.Flags().StringVarP(&outputFilePath, "out-file", "o", "", "Output file path")
 	command.Flags().StringVar(&city, "city", "", "City")
-	command.Flags().IntVar(&days, "days", 7, "Days of forecast")
+	command.Flags().IntVar(&days, "days", 3, "Days of forecast")
 	err := command.MarkFlagRequired("weather-api-key")
 	if err != nil {
 		slog.Error(err.Error())
